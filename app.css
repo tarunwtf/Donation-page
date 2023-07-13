@@ -1,0 +1,150 @@
+/* Navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* Photo Block */
+#div1 {
+  display: block;
+  background-color: red;
+  background-image: url(men5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  height: 100%;
+}
+
+/* Carousel */
+.carousel-container {
+  position: relative;
+  z-index: 1;
+}
+
+.carousel {
+  position: absolute;
+  top: -800px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 421px;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.fade {
+  -webkit-animation: 1.5s fade;
+  animation: 1.5s fade;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.NormalDiv1-container {
+  position: relative;
+  z-index: 1;
+}
+
+.NormalDiv1 {
+  position: absolute;
+  background-color: bisque;
+  margin-right: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btndonate {
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btndonate:hover {
+  background-color: #d32f2f;
+}
+
+#search {
+  background-color: #f2f2f2;
+  color: black;
+  margin-left: 20px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#search:focus {
+  background-color: #e0e0e0;
+  outline: none;
+}
+
+#Searchbtn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#Searchbtn:hover {
+  background-color: #45a049;
+}
