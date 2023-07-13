@@ -49,66 +49,75 @@ li a:hover {
 .carousel {
   position: absolute;
   top: -800px;
-  left: 50%;
+  left: 27%;
   transform: translateX(-50%);
   width: 800px;
   height: 421px;
   background-size: cover;
   border-radius: 30px;
+  animation: slide 3.5s;
 }
 
-.fade {
-  -webkit-animation: 1.5s fade;
-  animation: 1.5s fade;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
+@keyframes slide {
+  0% {
+    transform: translateX(-50%);
   }
-  to {
-    opacity: 1;
+  20% {
+    transform: translateX(-50%);
   }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
+  25% {
+    transform: translateX(-150%);
   }
-  to {
-    opacity: 1;
+  45% {
+    transform: translateX(-150%);
+  }
+  50% {
+    transform: translateX(-250%);
+  }
+  70% {
+    transform: translateX(-250%);
+  }
+  75% {
+    transform: translateX(-350%);
+  }
+  95% {
+    transform: translateX(-350%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
 .NormalDiv1-container {
   position: relative;
   z-index: 1;
+  top: -63%;
 }
 
 .NormalDiv1 {
   position: absolute;
   background-color: bisque;
   margin-right: 10%;
-  top: 50%;
-  left: 50%;
+  top: 800%;
+  left: 75%;
   transform: translate(-50%, -50%);
   width: 40%;
-  height: 380px;
+  height: 410px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Adjusted */
   align-items: center;
+  border-radius: 30px;
 }
 
 .btndonate {
-  margin-top: 20px;
-  width: 120px;
-  height: 40px;
-  background-color: #f44336;
-  color: white;
+  margin-left: 10px;
+  padding: 8px 16px;
   border: none;
   border-radius: 20px;
-  font-size: 16px;
+  background-color: #f44336;
+  color: white;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -147,4 +156,43 @@ li a:hover {
 
 #Searchbtn:hover {
   background-color: #45a049;
+}
+
+#donatenow {
+  position: relative;
+  margin-left: 41%;
+  margin-top: -10%;
+  width: 20%;
+  height: 9%;
+  background-color: yellow;
+  color: red;
+  border-radius: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#donatenow:hover {
+  background-color: darkgoldenrod;
+}
+
+#para1 {
+  font-size: 20px;
+  margin-top: -3%;
+}
+#hone {
+  margin-top: 20px; /* Adjusted */
+}
+
+#NormalDiv2 {
+  background-image: url(men5.jpg);
+  padding-top: 50%;
+  margin-top: 0px;
+}
+
+#para2 {
+  font-size: 20px;
+  font-style: italic;
+  margin-right: -15px;
+  font-style: bold;
 }
