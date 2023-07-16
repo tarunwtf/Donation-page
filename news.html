@@ -1,150 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="news.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="news.css" />
+  <script defer src="news.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
 
-    <!------------------------------------------------------------->
-    <!----------------------NAVIGATION BAR------------------------->
-    <!------------------------------------------------------------->
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-        <li>
-          <input type="tel" id="search" name="phone" placeholder="Search" />
-        </li>
-        <li>
-          <button id="Searchbtn">Search</button
-          ><button type="button" class="btndonate">DONATE</button>
-        </li>
-        <!--<button type="button" class="btndonate">DONATE</button>-->
-      </ul>
-      <!-------------------------------------------------------------->
-      <!-------------------------------------------------------------->
-      <!-------------------------------------------------------------->
-  
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+    <li>
+      <input type="tel" id="search" name="phone" placeholder="Search" />
+    </li>
+    <li>
+      <button id="Searchbtn">Search</button
+      ><button type="button" class="btndonate">DONATE</button>
+    </li>
+  </ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container">
-        <h2>We have helped Millions and growing !</h2>
-        <p>Some of the people we have helped</p><br>
+  <div class="container">
+    <h2>We have helped Millions and growing!</h2>
+    <p>Some of the people we have helped</p>
+    <div class="media">
+      <div class="media-left">
+        <img src="men12.png" class="media-object" style="width:75px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+        <p>John Doe was a construction worker in Los Angeles, USA. We helped restore his life after a tragic car accident where he lost his mother, impacting his mental health.</p>
+        
+        <!-- Nested media object -->
         <div class="media">
           <div class="media-left">
-            <img src="men12.png" class="media-object" style="width:75px">
+            <img src="men13.png" class="media-object" style="width:75px">
           </div>
           <div class="media-body">
-            <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
-            <p>John Doe was a construction worker at los angels, USA. We helped restore his life after a bad tragedy happend to him where he lost his mother <br>in a car accident which impacted his mental health.</p>
+            <h4 class="media-heading">Lila Smith<small><i> Posted on January 2, 2018</i></small></h4>
+            <p>Lila was a good doctor specializing in the psychiatry field, who suffered from severe mental illness. We helped her in her journey to recovery, showing that even doctors themselves are not immune.</p>
             
-
-
-
             <!-- Nested media object -->
             <div class="media">
               <div class="media-left">
-                <img src="men13.png" class="media-object" style="width:75px">
+                <img src="men14.png" class="media-object" style="width:75px">
               </div>
               <div class="media-body">
-                <h4 class="media-heading"> Lila smith<small><i> Posted on January 2, 2018</i></small></h4>
-                <p>Lila was a good doctor specially in the psychiatry field who suffered from severe mental illness which helped to cure. What a surprise that even doctors themselves are not safe.</p>
-      
-
-
-
-                <!-- Nested media object -->
-                <div class="media">
-                  <div class="media-left">
-                    <img src="men14.png" class="media-object" style="width:75px">
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading">Randy Johnson<small><i> Posted on February 24, 2020</i></small></h4>
-                    <p>Randy was descent college student who go attacked by schizophrenia in college due to high stress and competiton in college. He is now doin good working in a good job secured.</p>
-                  </div>
-                </div>
-                
+                <h4 class="media-heading">Randy Johnson<small><i> Posted on February 24, 2020</i></small></h4>
+                <p>Randy was a diligent college student who was attacked by schizophrenia in college due to high stress and competition. With our support, he has now recovered and is working in a secure job.</p>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
+  <div class="VideoPlayerContainer">
+    <video id="videoPlayer" controls autoplay><source src="menvid.mp4" type="video/mp4" /></video>
+    <div class="box1container">
+      <div id="box1">
+        <h1>WE HAVE HELPED MILLIONS</h1>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
 
-      <div class = "VideoPlayerContainer">
+    <div class="animation-container" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Animated Text</h2>
+      <p>This text will slide in from below the box1 element.</p>
+    </div>
+  </div>
 
-        <video id="videoPlayer" controls autoplay><source src="menvid.mp4" type="video/mp4" /></video>
+  <script>
+    AOS.init();
+  </script>
 
-
-        <div class = "box1container">
-
-            <div id = "box1">
-                <h1>WE HAVE HELPED MILLIONS</h1>
-               </div>
-
-
-        </div>
-
-      
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-    
 </body>
 </html>

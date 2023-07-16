@@ -1,147 +1,93 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="app.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
+<head>
+  <link rel="stylesheet" href="app.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 
-  <body>
-    <!------------------------------------------------------------->
-    <!----------------------NAVIGATION BAR------------------------->
-    <!------------------------------------------------------------->
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="about.html">About</a></li>
-      <li>
-        <input type="tel" id="search" name="phone" placeholder="Search" />
-      </li>
-      <li>
-        <button id="Searchbtn">Search</button
-        ><button type="button" class="btndonate">DONATE</button>
-      </li>
-      <!--<button type="button" class="btndonate">DONATE</button>-->
-    </ul>
-    <!-------------------------------------------------------------->
-    <!-------------------------------------------------------------->
-    <!-------------------------------------------------------------->
+<body>
+  <!-- Navigation Bar -->
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+    <li>
+      <input type="tel" id="search" name="phone" placeholder="Search" />
+    </li>
+    <li>
+      <button id="Searchbtn">Search</button>
+      <button type="button" class="btndonate">DONATE</button>
+    </li>
+  </ul>
 
+  <!-- Div 1 -->
+  <div id="div1">This is dv</div>
 
-
-
-
-
-
-
-
-
-    <!-------------------------------------------------------------->
-    <!------------------------DIV----------------------------------->
-    <!-------------------------------------------------------------->
-    <div id="div1">This is dv</div>
-
-    <div class="NormalDiv1-container">
-      <div class="NormalDiv1">
-        <h1 id="hone">WE CARE ABOUT YOU</h1>
-        <p id="para1">"Depression isn't Real" -Andrew Tate</p>
-
-        <p id="para2">
-          "Just Because no one else can heal or do your inner work for you
-          doesn't mean you can, should or need to "<br />do it alone" -
-          Anonymous
-        </p>
-
-        <!--<button type="button" class="btndonate">DONATE</button>-->
-      </div>
-    </div>
-
-    
-    <!--<button id="donatenow">DONATE NOW !</button>-->
-
-
-    <div id="NormalDiv2"></div>
-
-    <div id="NormalDiv3-container">
-      <div id="NormalDiv3">
-        <h1>Hey</h1>
-      </div>
-    </div>
-
-    <div id="NormalDiv4-container">
-      <div id="NormalDiv4">
-        <h1>Hey</h1>
-      </div>
-    </div>
-
-
-    <div id = "NormalDiv5"></div>
-
-    
-
-       
-      
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    <!-- Last Page -->
-    <div class="last-page-container">
-      <h1 class="last-page-title">Thank You for Your Support!</h1>
-      <p class="last-page-description">
-        Your donation makes a difference in the lives of those struggling with
-        mental health. Together, we can create a brighter future.
+  <!-- Normal Div 1 -->
+  <div class="NormalDiv1-container">
+    <div class="NormalDiv1">
+      <h1 id="hone">WE CARE ABOUT YOU</h1>
+      <p id="para1">"Depression isn't Real" -Andrew Tate</p>
+      <p id="para2">
+        "Just Because no one else can heal or do your inner work for you
+        doesn't mean you can, should or need to "<br />do it alone" - Anonymous
       </p>
-      <button class="last-page-button">Donate Now</button>
     </div>
+  </div>
 
-    <!-------------------------------------------------------------->
-    <!-------------------------------------------------------------->
-    <!-------------------------------------------------------------->
+  <!-- Normal Div 2 -->
+  <div id="NormalDiv2">
+    <h1 id="hthree">Let's Make a Difference Today</h1>
+    <button type="button" id="donatenow">Donate Now!</button>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!---------------------------------------------------------------->
-    <!-----------------------CAROUSEL--------------------------------->
-    <!---------------------------------------------------------------->
-
-    <div class="carousel-container">
-      <div class="carousel fade"></div>
+  <!-- Normal Div 3 -->
+  <div id="NormalDiv3-container" data-aos="fade-up">
+    <div id="NormalDiv3">
+      <h1>Our Mission</h1>
+      <img src="img1.png" alt="Girl in a jacket">
+      <p id="para100">We see prevention, treatment, rehabilitation, and promotion as the four pillars that our foundation stands upon while embarking on a journey to take mental health to every household.</p>
+      <button type="button" class="btndonate200">Read More</button>
     </div>
-    <!---------------------------------------------------------------->
-    <!---------------------------------------------------------------->
-    <!---------------------------------------------------------------->
+  </div>
 
+  <!-- Normal Div 4 -->
+  <div id="NormalDiv4-container" data-aos="fade-up">
+    <div id="NormalDiv4">
+      <h1 id="htwo">Our Vision</h1>
+      <p id="para500">We believe in building a holistic model of mental health care that is inclusive of social, economic, political, and cultural factors to make mental health accessible for all communities.</p>
+      <img src="img2.png" alt="Girl in a jacket">
+      <button type="button" class="btndonate200">Read More</button>
+    </div>
+  </div>
 
-    <script src="app.js"></script>
-  </body>
+  <!-- Normal Div 100 -->
+  <div id="NormalDiv100-container" data-aos="fade-up">
+    <div id="NormalDiv100">
+      <h1 id="htwo">About Us</h1>
+      <img src="img3.png" alt="Girl in a jacket">
+      <p id="para1000">Mental health is a non-profit organization working to bridge the intervention gap, advance in education and training in mental health, bust stigma, and provide access to quality mental health.</p>
+      <button type="button" class="btndonate200">Read More</button>
+    </div>
+  </div>
+
+  <!-- Last Page -->
+  <div class="last-page-container">
+    <h1 class="last-page-title">Thank You for Your Support!</h1>
+    <p class="last-page-description">Your donation makes a difference in the lives of those struggling with mental health. Together, we can create a brighter future.</p>
+    <button class="last-page-button">Donate Now</button>
+  </div>
+
+  <!-- Carousel -->
+  <div class="carousel-container">
+    <div class="carousel fade"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>

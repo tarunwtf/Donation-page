@@ -58,7 +58,7 @@ li a:hover {
 
 .carousel {
   position: absolute;
-  top: -3600px;
+  top: -2700px;
   left: 27%;
   transform: translateX(-50%);
   width: 800px;
@@ -146,9 +146,11 @@ li a:hover {
   border-radius: 30px;
 }
 #NormalDiv2 {
-  background-image: url(men5.jpg);
+  background-image: url(men15.jpg);
   padding-top: 50%;
   margin-top: -15px;
+  position: relative;
+  z-index: 1;
 }
 #NormalDiv3-container {
   position: relative;
@@ -163,7 +165,7 @@ li a:hover {
   top: 800%;
   left: 25%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 20%;
   height: 410px;
   display: flex;
   flex-direction: column;
@@ -175,7 +177,8 @@ li a:hover {
 #NormalDiv4-container {
   position: relative;
   z-index: 1;
-  top: -33%;
+  top: -63%;
+  left: -25%;
 }
 
 #NormalDiv4 {
@@ -185,7 +188,7 @@ li a:hover {
   top: 800%;
   left: 75%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 20%;
   height: 410px;
   display: flex;
   flex-direction: column;
@@ -238,6 +241,43 @@ li a:hover {
 .last-page-button:hover {
   background-color: #45a049;
 }
+
+
+
+#NormalDiv100-container {
+  position: relative;
+  z-index: 1;
+  top: -63%;
+  left: 1%;
+}
+
+#NormalDiv100 {
+  position: absolute;
+  background-color: greenyellow;
+  margin-right: 10%;
+  top: 800%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Adjusted */
+  align-items: center;
+  border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*********************************************************************************************************************************/
 /*********************************************************************************************************************************/
 /*********************************************************************************************************************************/
@@ -326,6 +366,45 @@ li a:hover {
 #donatenow:hover {
   background-color: darkgoldenrod;
 }
+
+
+.btndonate100{
+  position: absolute;
+  margin-left: 48%;
+  margin-top: -15%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f44336;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.btndonate100:hover {
+  background-color: #d32f2f;
+}
+
+.btndonate200{
+  position: absolute;
+  margin-left: -1%;
+  margin-top: 85%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f44336;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.btndonate200:hover {
+  background-color: #d32f2f;
+}
 /*********************************************************************************************************************************/
 /*********************************************************************************************************************************/
 /*********************************************************************************************************************************/
@@ -363,9 +442,33 @@ li a:hover {
 
 }
 
+#ppp{
+  width: 5%;
+}
 
+#hthree{
+  position: absolute;
+  margin-top: -50%;
+  margin-left: 34%;
+  text-align: center;
+  font-size: 50px;
+  font-style: italic;
+  color: orange;
 
+}
 
+#para100{
+  text-align: center;
+}
+#para500{
+  position: absolute;
+  margin-top: 48%;
+  text-align: center;
+}
+
+#para1000{
+  text-align: center;
+}
 
 
 

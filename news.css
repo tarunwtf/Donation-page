@@ -1,170 +1,136 @@
-/* **************************************Navigation bar ***************************************************************/
-/*********************************************************************************************************************/
-/*********************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+body {
+  background-color: #131316;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  li {
-    margin: 0 10px;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 16px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-  
-  /*********************************************************************************************************************/
-  /*********************************************************************************************************************/
-  /*********************************************************************************************************************/
-  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+li {
+  margin: 0 10px;
+}
 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
 
-
-
-
-
-
-/*******************************************************BUTTONS***************************************************************/
-/*********************************************************************************************************************************/
-/*********************************************************************************************************************************/
-
+li a:hover {
+  background-color: #111;
+}
 
 .btndonate {
-    margin-left: 10px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 20px;
-    background-color: #f44336;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btndonate:hover {
-    background-color: #d32f2f;
-  }
-  
-  #search {
-    background-color: #f2f2f2;
-    color: black;
-    margin-left: 20px;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 20px;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
-  
-  #search:focus {
-    background-color: #e0e0e0;
-    outline: none;
-  }
-  
-  #Searchbtn {
-    margin-left: 10px;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 20px;
-    background-color: #4caf50;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #Searchbtn:hover {
-    background-color: #45a049;
-  }
-  
-  #donatenow {
-    position: relative;
-    margin-left: 41%;
-    margin-top: -10%;
-    width: 20%;
-    height: 9%;
-    background-color: yellow;
-    color: red;
-    border-radius: 30px;
-    font-size: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #donatenow:hover {
-    background-color: darkgoldenrod;
-  }
-  /*********************************************************************************************************************************/
-  /*********************************************************************************************************************************/
-  /*********************************************************************************************************************************/
-
-
-
-
-
-
-
-
-.container{
-    margin-left: 1%;
-    margin-top: 2%;
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f44336;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-
-
-
-.VideoPlayerContainer
-{
-    position: relative;
-    z-index: 1;
+.btndonate:hover {
+  background-color: #d32f2f;
 }
 
-
-#videoPlayer{
-    position: absolute;
-    margin-left: 65%;
-    margin-top: -27%;
-    width:30%;
+#search {
+  background-color: #f2f2f2;
+  color: black;
+  margin-left: 20px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 
-
-
-.box1container{
-    position: relative;
-    z-index: 1;
-    margin-top: 10%;
+#search:focus {
+  background-color: #e0e0e0;
+  outline: none;
 }
 
+#Searchbtn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-#box1{
-    position: absolute;
-    background-color: orange;
-    width: 100%;
-    height: 150px;
-    align-items: center;
-    justify-content: center; 
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-    
+#Searchbtn:hover {
+  background-color: #45a049;
+}
 
+.container {
+  margin-left: 1%;
+  margin-top: 2%;
+}
+
+.VideoPlayerContainer {
+  position: relative;
+  z-index: 1;
+}
+
+#videoPlayer {
+  position: absolute;
+  margin-left: 65%;
+  margin-top: -27%;
+  width: 30%;
+}
+
+.box1container {
+  position: relative;
+  z-index: 1;
+  margin-top: 10%;
+  width: 100%;
+}
+
+#box1 {
+  position: absolute;
+  background-color: orange;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.animation-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animation-container[data-aos="fade-up"] {
+  transform: translateY(50px);
+}
+
+.animation-container[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
 }
