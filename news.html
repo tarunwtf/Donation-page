@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="news.css" />
-  <script defer src="news.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="app.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+		/* Styling the body */
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		/* Styling the first parallax's
+		height, width and background color */
+		.parallax-1 {
+			width: 100%;
+			height: 600px;
+			background: url(
+'men1.jpg');
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+
+		/* Styling the title of first parallax */
+		.parallax-1 h2 {
+			margin: auto;
+			position: relative;
+			left: 500x;
+			top: 300px;
+			width: 250px;
+			height: 32px;
+			padding: 10px;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+
+		/* Styling the second parallax's
+		height, width and background color */
+		.parallax-2 {
+			width: 100%;
+			height: 600px;
+			background: url(
+'men3.jpg');
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+
+		/* Styling the title of second parallax */
+		.parallax-2 h2 {
+			margin: auto;
+			position: relative;
+			left: 500x;
+			top: 300px;
+			width: 250px;
+			height: 37px;
+			padding: 10px;
+			background-color: white;
+			color: black;
+			text-align: center;
+			font-size: 30px;
+			font-family: Verdana;
+		}
+
+		/* Styling the content or paragraph */
+		.para-1 {
+			padding: 50px;
+			background-color: black;
+			color: white;
+			font-size: 17px;
+		}
+
+		/* Styling the content or paragraph */
+		.para-2 {
+			text-align: center;
+			padding: 25px;
+			font-size: 17px;
+			font-family: Verdana;
+			background-color: black;
+			color: white;
+		}
+	</style>
 </head>
+
 <body>
 
+    <!-- Navigation Bar -->
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="news.html">News</a></li>
@@ -21,65 +95,86 @@
       <input type="tel" id="search" name="phone" placeholder="Search" />
     </li>
     <li>
-      <button id="Searchbtn">Search</button
-      ><button type="button" class="btndonate">DONATE</button>
+      <button id="Searchbtn">Search</button>
+      <button type="button" class="btndonate">DONATE</button>
     </li>
   </ul>
 
-  <div class="container">
-    <h2>We have helped Millions and growing!</h2>
-    <p>Some of the people we have helped</p>
-    <div class="media">
-      <div class="media-left">
-        <img src="men12.png" class="media-object" style="width:75px">
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
-        <p>John Doe was a construction worker in Los Angeles, USA. We helped restore his life after a tragic car accident where he lost his mother, impacting his mental health.</p>
-        
-        <!-- Nested media object -->
-        <div class="media">
-          <div class="media-left">
-            <img src="men13.png" class="media-object" style="width:75px">
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Lila Smith<small><i> Posted on January 2, 2018</i></small></h4>
-            <p>Lila was a good doctor specializing in the psychiatry field, who suffered from severe mental illness. We helped her in her journey to recovery, showing that even doctors themselves are not immune.</p>
+	<!-- Giving title of the first parallax -->
+	<div class="parallax-1">
+		<h2>NEWS</h2>
+	</div>
+
+	<!--Content of first parallax -->
+	<div class="para-1" style="text-align: center;">
+        <h1>We have helped Millions and growing!</h1>
+        <div class="container">
             
-            <!-- Nested media object -->
+            <p>Some of the people we have helped</p>
             <div class="media">
               <div class="media-left">
-                <img src="men14.png" class="media-object" style="width:75px">
+                <img src="men12.png" class="media-object" style="width:75px">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Randy Johnson<small><i> Posted on February 24, 2020</i></small></h4>
-                <p>Randy was a diligent college student who was attacked by schizophrenia in college due to high stress and competition. With our support, he has now recovered and is working in a secure job.</p>
+                <h4 class="media-heading">John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+                <p>John Doe was a construction worker in Los Angeles, USA. We helped restore his life after a tragic car accident where he lost his mother, impacting his mental health.</p>
+                
+                <!-- Nested media object -->
+                <div class="media">
+                  <div class="media-left">
+                    <img src="men13.png" class="media-object" style="width:75px">
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Lila Smith<small><i> Posted on January 2, 2018</i></small></h4>
+                    <p>Lila was a good doctor specializing in the psychiatry field, who suffered from severe mental illness. We helped her in her journey to recovery, showing that even doctors themselves are not immune.</p>
+                    
+                    <!-- Nested media object -->
+                    <div class="media">
+                      <div class="media-left">
+                        <img src="men14.png" class="media-object" style="width:75px">
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Randy Johnson<small><i> Posted on February 24, 2020</i></small></h4>
+                        <p>Randy was a diligent college student who was attacked by schizophrenia in college due to high stress and competition. With our support, he has now recovered and is working in a secure job.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
+		
+	</div>
 
-  <div class="VideoPlayerContainer">
-    <video id="videoPlayer" controls autoplay><source src="menvid.mp4" type="video/mp4" /></video>
-    <div class="box1container">
-      <div id="box1">
-        <h1>WE HAVE HELPED MILLIONS</h1>
-      </div>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br>
+	<!-- Giving title of the first parallax -->
+	<div class="parallax-2">
+		<h2>PROJECTS</h2>
+	</div>
 
-    <div class="animation-container" data-aos="fade-up" data-aos-duration="1000">
-      <h2>Animated Text</h2>
-      <p>This text will slide in from below the box1 element.</p>
-    </div>
-  </div>
+	<!--Content of first parallax -->
+	<div class="para-2">
+		<p>
+			 We had tie ups with multiple news organizations and reporters across the world
+             to support mental health and take care of it especially on the coverage part.
+		</p>
+        <video id="videoPlayer" controls autoplay style="width: 50vw;"><source src="menvid.mp4" type="video/mp4" /></video>
+	</div>
 
-  <script>
-    AOS.init();
-  </script>
+	<!--This will be same as first parallax-->
+	<div class="parallax-1">
+		<h2>HELP US</h2>
+	</div>
 
+	<div class="para-2">
+		<p>
+			 Technical Content Writer
+			Intern at GeeksForGeeks 
+			 Microsoft Learn Student
+			Ambassador - Beta 
+			Participant in GirlScript Summer
+			of Code 2021 
+			Mentored HackTX Hackathon
+		</p>
+	</div>
 </body>
 </html>

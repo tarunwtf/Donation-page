@@ -1,12 +1,76 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="app.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+<link rel="stylesheet" href="app.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
 
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("mencl1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("mencl2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("men18.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
 <body>
-  <!-- Navigation Bar -->
+
+    <!-- Navigation Bar -->
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="news.html">News</a></li>
@@ -21,80 +85,115 @@
     </li>
   </ul>
 
-  <!-- Div 1 -->
-  <div id="div1">This is dv</div>
-
-  <div id = "h100-container">
-    <h1 id = "h100">Support us by making a contribution</h1>
-    <button type="button" class="btndonate1000">DONATE</button>
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">SUPPORT US BY MAKING A CONTRIBUTION</span>
+  <button type="button" class="btndonate" style="margin-top: 7vw; color: white;background-color: red; position: absolute; margin-left: -40vw;">DONATE</button>
   </div>
+</div>
 
- 
-
-  <!-- Normal Div 1 -->
-  <!--<div class="NormalDiv1-container">
-    <div class="NormalDiv1">
-      <h1 id="hone">WE CARE ABOUT YOU</h1>
-      <p id="para1">"Depression isn't Real" -Andrew Tate</p>
-      <p id="para2">
-        "Just Because no one else can heal or do your inner work for you
-        doesn't mean you can, should or need to "<br />do it alone" - Anonymous
-      </p>
-    </div>
-  </div>-->
-
-  <!-- Normal Div 2 -->
-  <div id="NormalDiv2">
-    <h1 id="hthree">Let's Make a Difference Today</h1>
-    <button type="button" id="donatenow">Donate Now!</button>
-  </div>
-
+<div style="color: #777;background-color: white;text-align:center;padding:50px 80px;text-align: justify; display: flex;justify-content: space-around;">
+  <h3 style="text-align:center; position: absolute; margin-top: -2%;font-size: 30px;font-style: italic;">Let's Make a Difference Today</h3>
   <!-- Normal Div 3 -->
-  <div id="NormalDiv3-container" data-aos="fade-up">
+  <div id="NormalDiv3-container" data-aos="fade-up" style="background-color: white; margin-left: -4%;">
     <div id="NormalDiv3">
-      <h1>Our Mission</h1>
-      <img src="img1.png" alt="Girl in a jacket">
-      <p id="para100">We see prevention, treatment, rehabilitation, and promotion as the four pillars that our foundation stands upon while embarking on a journey to take mental health to every household.</p>
-      <button type="button" class="btndonate200">Read More</button>
+      <h1 style="text-align: center;">Our Mission</h1>
+      <img src="img1.png" alt="Girl in a jacket" style="margin-left: 40%;">
+      <p id="para100" style="text-align: center;">We see prevention, treatment, rehabilitation, and promotion as the four pillars that our foundation stands upon while embarking on a journey to take mental health to every household.</p>
+      <br>
+      <button type="button" class="btndonate" style="position: absolute; margin-left: 10vw; margin-top: -1vw;">Read More</button>
     </div>
   </div>
 
   <!-- Normal Div 4 -->
   <div id="NormalDiv4-container" data-aos="fade-up">
     <div id="NormalDiv4">
-      <h1 id="htwo">Our Vision</h1>
-      <p id="para500">We believe in building a holistic model of mental health care that is inclusive of social, economic, political, and cultural factors to make mental health accessible for all communities.</p>
-      <img src="img2.png" alt="Girl in a jacket">
-      <button type="button" class="btndonate200">Read More</button>
+      <h1 id="htwo" style="text-align: center;">Our Vision</h1>
+      <p id="para500" style="text-align: center;">We believe in building a holistic model of mental health care that is inclusive of social, economic, political, and cultural factors to make mental health accessible for all communities.</p>
+      <img src="img2.png" alt="Girl in a jacket" style="position: absolute; left: 44%;">
+      <button type="button" class="btndonate" style="position: absolute; margin-left: 11%; margin-top: 8%;">Read More</button>
     </div>
   </div>
 
   <!-- Normal Div 100 -->
   <div id="NormalDiv100-container" data-aos="fade-up">
     <div id="NormalDiv100">
-      <h1 id="htwo">About Us</h1>
-      <img src="img3.png" alt="Girl in a jacket">
-      <p id="para1000">Mental health is a non-profit organization working to bridge the intervention gap, advance in education and training in mental health, bust stigma, and provide access to quality mental health.</p>
-      <button type="button" class="btndonate200">Read More</button>
+      <h1 id="htwo"style="text-align: center;">About Us</h1>
+      <img src="img3.png" alt="Girl in a jacket"style="margin-left: 42%">
+      <p id="para1000" style="text-align: center;">Mental health is a non-profit organization working to bridge the intervention gap, advance in education and training in mental health, bust stigma, and provide access to quality mental health.</p>
+      <button type="button" class="btndonate" style="position: absolute; margin-left: 14%; margin-top: 1%;">Read More</button>
     </div>
   </div>
 
-  <!-- Last Page -->
-  <div class="last-page-container">
-    <h1 class="last-page-title">Thank You for Your Support!</h1>
-    <p class="last-page-description">Your donation makes a difference in the lives of those struggling with mental health. Together, we can create a brighter future.</p>
-    <button class="last-page-button">Donate Now</button>
-  </div>
 
-  <!-- Carousel -->
-  <div class="carousel-container">
-    <div class="carousel fade"></div>
-  </div>
 
-  <script src="app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">MENTAL HEALTH</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>We care about you and we support you</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SAVE LIVES</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>We are a community of fund raisers</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">HELP US</span>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
+
+
+
+ <!-- Last Page -->
+ <div class="last-page-container">
+  <h1 class="last-page-title">Thank You for Your Support!</h1>
+  <p class="last-page-description">Your donation makes a difference in the lives of those struggling with mental health. Together, we can create a brighter future.</p>
+  <button class="last-page-button">Donate Now</button>
+</div>
+
 </body>
 </html>

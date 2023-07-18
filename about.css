@@ -1,0 +1,166 @@
+/* **************************************Navigation bar ***************************************************************/
+/*********************************************************************************************************************/
+/*********************************************************************************************************************/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  /*********************************************************************************************************************/
+  /*********************************************************************************************************************/
+  /*********************************************************************************************************************/
+  
+
+
+  .btndonate {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f44336;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btndonate:hover {
+    background-color: #d32f2f;
+  }
+  
+  #search {
+    background-color: #f2f2f2;
+    color: black;
+    margin-left: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search:focus {
+    background-color: #e0e0e0;
+    outline: none;
+  }
+  
+  #Searchbtn {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #Searchbtn:hover {
+    background-color: #45a049;
+  }
+  
+  #donatenow {
+    position: relative;
+    margin-left: 41%;
+    margin-top: -10%;
+    width: 20%;
+    height: 9%;
+    background-color: yellow;
+    color: red;
+    border-radius: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #donatenow:hover {
+    background-color: darkgoldenrod;
+  }
+  
+  
+  .btndonate100{
+    position: absolute;
+    margin-left: 48%;
+    margin-top: -15%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f44336;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  .btndonate100:hover {
+    background-color: #d32f2f;
+  }
+  
+  .btndonate200{
+    position: absolute;
+    margin-left: -1%;
+    margin-top: 85%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f44336;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  .btndonate200:hover {
+    background-color: #d32f2f;
+  }
+  
+  .btndonate1000{
+    position: absolute;
+    margin-left: -1%;
+    margin-top: 10%;
+    right: 73%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f44336;
+    color: white;
+    font-size: 14px;
+    width: 12%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  .btndonate1000:hover {
+    background-color: #d32f2f;
+  }
+  
+  
+  
