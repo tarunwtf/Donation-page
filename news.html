@@ -80,6 +80,19 @@
 			background-color: black;
 			color: white;
 		}
+
+
+		/* Additional CSS for animated elements */
+.animate-on-scroll {
+      opacity: 0;
+      transform: translateY(280px);
+      transition: opacity 3.6s ease, transform 3.6s ease;
+    }
+
+    .aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
 	</style>
 </head>
 
@@ -111,7 +124,7 @@
         <div class="container">
             
             <p>Some of the people we have helped</p>
-            <div class="media">
+            <div class="media animate-on-scroll" data-aos="fade-up">
               <div class="media-left">
                 <img src="men12.png" class="media-object" style="width:75px">
               </div>
@@ -157,7 +170,7 @@
 			 We had tie ups with multiple news organizations and reporters across the world
              to support mental health and take care of it especially on the coverage part.
 		</p>
-        <video id="videoPlayer" controls autoplay style="width: 50vw;"><source src="menvid.mp4" type="video/mp4" /></video>
+        <video id="videoPlayer" controls autoplay style="width: 50vw;" class="animate-on-scroll" data-aos="fade-up"><source src="menvid.mp4" type="video/mp4" /></video>
 	</div>
 
 	<!--This will be same as first parallax-->
@@ -167,14 +180,31 @@
 
 	<div class="para-2">
 		<p>
-			 Technical Content Writer
-			Intern at GeeksForGeeks 
-			 Microsoft Learn Student
-			Ambassador - Beta 
-			Participant in GirlScript Summer
-			of Code 2021 
-			Mentored HackTX Hackathon
+			 This is a Non Profit Association working towards helping mental health people raise funds for thier living.<br>
+			 Jaivardhan Goyal<br>
+			 +91 9716000257
 		</p>
 	</div>
+
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		  const animateElements = document.querySelectorAll(".animate-on-scroll");
+	  
+		  const observer = new IntersectionObserver(function(entries) {
+			entries.forEach(entry => {
+			  if (entry.isIntersecting) {
+				entry.target.classList.add("aos-animate");
+				observer.unobserve(entry.target);
+			  }
+			});
+		  });
+	  
+		  animateElements.forEach(element => {
+			observer.observe(element);
+		  });
+		});
+	  </script>
 </body>
 </html>
