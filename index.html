@@ -3,6 +3,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="app.css" />
+<script src = "app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body, html {
@@ -227,6 +228,35 @@ h3 {
       observer.observe(element);
     });
   });
+</script>
+
+<script>
+  
+    // Get all elements with class "btndonate"
+    var donateButtons = document.getElementsByClassName("btndonate");
+
+    // Loop through the collection and attach onclick event to each button
+    for (var i = 0; i < donateButtons.length; i++) {
+      donateButtons[i].onclick = function() {
+        location.href = "https://buy.stripe.com/7sIbJq9b51166OY6oo";
+      };
+    }
+  
+</script>
+
+
+<script>
+  
+  // Get all elements with class "btndonate"
+  var donateButtons = document.getElementsByClassName("last-page-button");
+
+  // Loop through the collection and attach onclick event to each button
+  for (var i = 0; i < donateButtons.length; i++) {
+    donateButtons[i].onclick = function() {
+      location.href = "https://buy.stripe.com/7sIbJq9b51166OY6oo";
+    };
+  }
+
 </script>
 
 </body>
