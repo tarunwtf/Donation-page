@@ -1,3 +1,88 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("Images and Videos/mencl1.jpg");
+  min-height: 100%;
+  
+}
+
+.bgimg-2 {
+  background-image: url("Images and Videos/mencl2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("Images and Videos/men18.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.caption span.border {
+  background-color: black;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: black;
+}
+
+/* Additional CSS for animated elements */
+.animate-on-scroll {
+      opacity: 0;
+      transform: translateY(280px);
+      transition: opacity 3.6s ease, transform 3.6s ease;
+    }
+
+    .aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* **************************************Navigation bar ***************************************************************/
 /*********************************************************************************************************************/
 /*********************************************************************************************************************/
@@ -10,10 +95,13 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 4vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 li {
-  margin: 0 10px;
+  margin: 0 50px;
 }
 
 li a {
@@ -22,34 +110,13 @@ li a {
   text-align: center;
   text-decoration: none;
   padding: 10px 16px;
-  font-size: 16px;
+  font-size: 18px;
   transition: background-color 0.3s ease;
+  
 }
 
 li a:hover {
   background-color: #111;
-}
-
-/*********************************************************************************************************************/
-/*********************************************************************************************************************/
-/*********************************************************************************************************************/
-
-
-
-.btndonate {
-  margin-left: 10px;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-  background-color: #f44336;
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btndonate:hover {
-  background-color: #d32f2f;
 }
 
 
@@ -62,6 +129,8 @@ li a:hover {
   border-radius: 20px;
   font-size: 14px;
   transition: background-color 0.3s ease;
+  width: 13vw;
+  height: 1vw;
 }
 
 #search:focus {
@@ -69,23 +138,66 @@ li a:hover {
   outline: none;
 }
 
+/*********************************************************************************************************************/
+/*********************************************************************************************************************/
+/*********************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************BUTTONS***************************************************************/
+.btndonate {
+  margin-left: 5vw;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: #A30057;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 6vw;
+  height: 2.5vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.btndonate:hover {
+  background-color: #52012c;
+}
+
+
 #Searchbtn {
   margin-left: 10px;
   padding: 8px 16px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: #4caf50;
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 6vw;
+  height: 2.5vw;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #Searchbtn:hover {
-  background-color: #45a049;
+  background-color: #124701;
 }
 
-#donatenow {
+#donatenowBIG {
   position: relative;
   margin-left: 41%;
   margin-top: -10%;
@@ -99,7 +211,7 @@ li a:hover {
   transition: background-color 0.3s ease;
 }
 
-#donatenow:hover {
+#donatenowBIG:hover {
   background-color: darkgoldenrod;
 }
 
@@ -201,6 +313,7 @@ transition: background-color 0.3s ease;
 .last-page-button:hover {
 background-color: #45a049;
 }
+/*************************************************************************************************************************/
 
 
 
