@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="app.css" />
 <script src = "app.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 
 <body>
@@ -41,6 +42,8 @@
   
   
   
+
+
   
   
   <!-- Normal Div 3 -->
@@ -50,7 +53,7 @@
       <img src="Images and Videos/img1.png" alt="Girl in a jacket" style="margin-left: 8vw;">
       <p id="para100" style="text-align: center;font-size: 20px;">We see prevention, treatment, rehabilitation, and promotion as the four pillars that our foundation stands upon while embarking on a journey to take mental health to every household.</p>
       <br>
-      <button type="button" class="btndonate" style="position: absolute; margin-left: 5vw; margin-top: -1vw;width: 10vw;">Read More</button>
+      <button type="button" class="btnreadmore1">Read More</button>
     </div>
   </div>
 
@@ -60,7 +63,7 @@
       <h1 id="htwo" style="text-align: center;">Our Vision</h1>
       <img src="Images and Videos/img2.png" alt="Girl in a jacket" style="margin-left: 8vw;">
       <p id="para500" style="text-align: center;font-size: 20px;">We believe in building a holistic model of mental health care that is inclusive of social, economic, political, and cultural factors to make mental health accessible for all communities.</p>
-      <button type="button" class="btndonate" style="position: absolute; margin-left: 6vw; margin-top: 1vw;width: 10vw;">Read More</button>
+      <button type="button" class="btnreadmore2">Read More</button>
     </div>
   </div>
 
@@ -70,21 +73,9 @@
       <h1 id="htwo"style="text-align: center;">About Us</h1>
       <img src="Images and Videos/img3.png" alt="Girl in a jacket"style="margin-left: 9vw">
       <p id="para1000">Mental health is a non-profit organization working to bridge the intervention gap, advance in education and training in mental health, bust stigma, and provide access to quality mental health.</p>
-      <button type="button" class="btndonate" style="position: absolute; margin-left: 7vw; margin-top: 1vw;width: 10vw;">Read More</button>
+      <button type="button" class="btnreadmore3">Read More</button>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -108,10 +99,89 @@
 </div>
 
 <div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;height: 10vw;">
-  <p>We care about you and we support you</p>
-  
-  
+  <div style="color:#ddd;background-color:white;">
+
+  <div class="square">
+		<span></span>
+		<span></span>
+		<span></span>
+		<div class="content">
+			<div class="contentBx active" id="content1">
+				<div class="card">
+					<div class="imbBx">
+						<img src="img1.jpg">
+					</div>
+					<div class="textBx">
+						<h2>Nina Oberoi<br><b>Product Designer</b></h2>
+						
+					</div>
+				</div>
+			</div>
+			<div class="contentBx" id="content2">
+				<div class="card">
+					<div class="imbBx">
+						<img src="img2.jpg">
+					</div>
+					<div class="textBx">
+						<h2>Harry Wegen<br><b>Engineer</b></h2>
+						
+					</div>
+				</div>
+			</div>
+			<div class="contentBx" id="content3">
+				<div class="card">
+					<div class="imbBx">
+						<img src="img3.jpg">
+					</div>
+					<div class="textBx">
+						<h2>Riya Chaudhary<br><b>Marketing Expert</b></h2>
+						
+					</div>
+				</div>
+			</div>
+			<div class="contentBx" id="content4">
+				<div class="card">
+					<div class="imbBx">
+						<img src="img4.jpg">
+					</div>
+					<div class="textBx">
+						<h2>Emma Charlotte<br><b>Student</b></h2>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="bottom">
+		<div class="waves">
+			<div class="wave" id="wave1"></div>
+			<div class="wave" id="wave2"></div>
+			<div class="wave" id="wave3"></div>
+			<div class="wave" id="wave4"></div>
+		</div>
+		<div class="icon">
+			<div class="imgBx active" style="--i:0;" data-id="content1">
+				<img src="img1.jpg">
+			</div>
+			<div class="imgBx" style="--i:1;" data-id="content2">
+				<img src="img2.jpg">
+			</div>
+			<div class="imgBx" style="--i:2;" data-id="content3">
+				<img src="img3.jpg">
+			</div>
+			<div class="imgBx" style="--i:3;" data-id="content4">
+				<img src="img4.jpg">
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
   
   </div>
 </div>
@@ -273,6 +343,84 @@
   }
 
 </script>
+
+
+<script type="text/javascript">
+  var	imgBx = document.querySelectorAll('.imgBx');
+  var	contentBx = document.querySelectorAll('.contentBx');
+  
+  for (var i = 0; i < imgBx.length; i++) {
+    imgBx[i].addEventListener('mouseover', function() {
+      for (var i = 0; i < contentBx.length; i++) {
+        contentBx[i].className = 'contentBx';
+      }
+      document.getElementById(this.dataset.id).className = 'contentBx active';
+
+      for (var i = 0; i < imgBx.length; i++) {
+        imgBx[i].className = 'imgBx';
+      }
+      this.className = 'imgBx active';
+    });
+  }
+</script>
+
+
+
+
+
+
+
+
+<script>
+  
+  // Get all elements with class "btndonate"
+  var donateButtons = document.getElementsByClassName("btnreadmore1");
+
+  // Loop through the collection and attach onclick event to each button
+  for (var i = 0; i < donateButtons.length; i++) {
+    donateButtons[i].onclick = function() {
+      location.href = "ReadMore.html";
+    };
+  }
+
+</script>
+
+
+
+<script>
+  
+  // Get all elements with class "btndonate"
+  var donateButtons = document.getElementsByClassName("btnreadmore2");
+
+  // Loop through the collection and attach onclick event to each button
+  for (var i = 0; i < donateButtons.length; i++) {
+    donateButtons[i].onclick = function() {
+      location.href = "ReadMore.html";
+    };
+  }
+
+</script>
+
+
+<script>
+  
+  // Get all elements with class "btndonate"
+  var donateButtons = document.getElementsByClassName("btnreadmore3");
+
+  // Loop through the collection and attach onclick event to each button
+  for (var i = 0; i < donateButtons.length; i++) {
+    donateButtons[i].onclick = function() {
+      location.href = "ReadMore.html";
+    };
+  }
+
+</script>
+
+
+
+
+
+
 
 
 

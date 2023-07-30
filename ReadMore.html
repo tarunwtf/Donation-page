@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" type="text/css" href="ReadMore.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="Images and Videos/logo.png" style="margin-left: 0vw;width: 10vw;"></a>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </header>
+    <section class="parallax">
+      <h2 id="text">My Mental Fitness</h2>
+      <img src="monutain_01.png" id="m1">
+      <img src="trees_02.png" id="t2">
+      <img src="monutain_02.png" id="m2">
+      <img src="trees_01.png" id="t1">
+      <img src="man.png" id="man">
+      <img src="plants.png" id="plants">
+    </section>
+    <section class="sec">
+      <h2>My Mental Fitness</h2>
+      <p>One in two people who receive a diagnosis of leprosy or LF will also be affected by mental health problems. Mental health problems are especially high among people who develop disabilities as a result of their disease. This includes severe depression and anxiety and low self-esteem.
+
+        We have worked with leprosy for nearly one hundred years; time and time again we have observed how people’s lives change when they are diagnosed, or even suspect they are affected, with leprosy. They can be keenly aware of very real prejudice and discrimination, scared of potential disability or what their friends, family, and neighbours will think. It is also the same for people affected by LF.
+        
+        Add in concerns over education, employment, residential, or even relationship consequences and it is easy to see why the numbers of people in this situation also suffering from a mental health problem are so high.
+        
+        This can be worse in places like Bangladesh, where provision for mental health support after a diagnosis can be harder to come by locally. With no one to talk to about their condition or fears, this can lead to people feeling isolated, taking less interest in self-care, exacerbating the physical symptoms and even developing suicidal thoughts.
+        
+        Read Building the case for the integration of Mental Health services in leprosy and lymphatic filariasis programmes.
+      
+      
+        1 in 4 people are affected by a mental disorder in their lifetime. 
+
+        By 2030 depression will be the leading cause of disease burden globally. 
+        
+        Over 900,000 people commit suicide each year. Suicide the second most common death cause of death among young people. 
+        
+        3 out of 4 people with severe mental disorders receive no treatment. 
+        
+        These are all facts laid out by the World Health Organization in the Mental Health Action Plan 2013-2020. 
+        
+        These sobering statements bring to life the need for open communications surrounding mental health awareness and care. 
+        
+        Many of those who suffer do so in silence because the stigma surrounding mental health is still alive in our communities.
+        
+        
+
+        Our goal with The Truth about Series is to smash that stigma once and for all. 
+
+The series features celebrities and dignitaries of all walks of life sharing their own personal story of mental health allowing everyone to see that this is a human problem which requires a global action. 
+
+As part of our ongoing commitment to mental health awareness Industry experts and mental health leaders will provide the newest care and support tools such as nutrition, medications and natural applications so the viewer can take actions. 
+
+This series will air globally on television networks and be available in all forms of media. 
+
+*Here is our film on mental illness and how to care for those who suffer: BiPolar Rock-n-Roller
+      
+      </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.from("#m1",{
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 100,
+      })
+      gsap.from("#m2",{
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 50,
+      })
+      gsap.from("#t2",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#t1",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: 50,
+      })
+      gsap.from("#man",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -250,
+      })
+      gsap.from("#plants",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#text",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: 600,
+      })
+    </script>
+  </body>
+</html>
