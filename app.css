@@ -1358,6 +1358,25 @@ li a:hover {
   margin-right: 80vw;
 }
 
-
-
+.square span{
+  margin-right: 70vw;
 }
+
+#content4{
+  display: none;
+}
+
+.b101{
+  margin-right: 58vw;
+}
+
+#ull2{
+  display: none;
+}
+
+.bhu{
+  margin-left: 40vw;
+  left: -40vw;
+}
+}
+
