@@ -1326,5 +1326,38 @@ li a:hover {
 
 
 
+.bgimg-1{
+  background-size:cover;
+  width: 100%;
+}
+
+
+.caption{
+  margin-left: 3vw;
+}
+
+
+#div1{
+  height:15vw;
+}
+
+#NormalDiv3-container{
+  display: none;
+}
+
+#NormalDiv4-container{
+  display: none;
+}
+
+#NormalDiv100-container{
+  display: none;
+}
+
+
+.contentBx{
+  margin-right: 80vw;
+}
+
+
 
 }
