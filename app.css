@@ -1263,7 +1263,7 @@ li a:hover {
 
 }
 
-@media only screen and (320px <= width <= 480px)
+@media only screen and (max-width: 480px)
 {
   .btndonate2{
     background-color: #111;
