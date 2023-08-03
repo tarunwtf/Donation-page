@@ -1265,8 +1265,66 @@ li a:hover {
 
 @media only screen and (max-width: 480px)
 {
-  .btndonate2{
-    background-color: #111;
-  }
+  /* **************************************Navigation bar ***************************************************************/
+/*********************************************************************************************************************/
+/*********************************************************************************************************************/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0vw;
+ 
+
+}
+
+li {
+  margin: 0 50px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 16px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+#search {
+  background-color: #f2f2f2;
+  color: black;
+  margin-left: 20px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: 13vw;
+  height: 1vw;
+}
+
+#search:focus {
+  background-color: #e0e0e0;
+  outline: none;
+}
+
+/*********************************************************************************************************************/
+/*********************************************************************************************************************/
+/*********************************************************************************************************************/
+
+
+
 
 }
