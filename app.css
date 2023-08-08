@@ -1146,7 +1146,7 @@ section {
 
 
 
-/* Add mobile-friendly styles here */
+
 @media only screen and (max-width: 768px) {
   /* Your mobile-specific CSS styles go here */
   /* You can override, modify, or add new styles for smaller screens */
@@ -1263,6 +1263,8 @@ li a:hover {
 
 }
 
+
+/*For Mobile Development*/
 @media only screen and (max-width: 480px)
 {
   /* **************************************Navigation bar ***************************************************************/
@@ -1380,13 +1382,15 @@ li a:hover {
 }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1280px)
+/*For Laptops*/
+@media only screen and (min-width: 480px) and (max-width: 1500px)
 {
   .btndonate2{
+    position: absolute;
     width: auto;
     height: auto;
-    left: 71vw;
     margin-top: 9vw;
+    right: 46vw;
   }
 
 
@@ -1517,6 +1521,9 @@ li a:hover {
   
   
 }
+
+
+
   
 
 }
